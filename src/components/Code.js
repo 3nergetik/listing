@@ -4,9 +4,7 @@ import PropTypes from 'prop-types';
 function Code({code, price}) {
     const result = code === 'USD' ? `$${price}` : code === 'EUR' ? `€${price}` : `${price} ${code}`;
     return (
-        <>
-            {result}
-        </>
+        <>{result}</>
     )
 }
 
@@ -16,4 +14,3 @@ Code.propTypes = {
     code: PropTypes.string.isRequired,
     price: PropTypes.string.isRequired,
 };
-

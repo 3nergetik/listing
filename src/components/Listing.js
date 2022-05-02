@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./Card";
 import PropTypes from "prop-types";
 
-function Listing({items}) {
+export default function Listing({items}) {
     const elements = items.map((item) =>
         <Card item={item} key={item.listing_id}/>);
 
@@ -14,8 +14,6 @@ function Listing({items}) {
 Listing.defaultProps = {
     items: []
 };
-
-export default Listing;
 
 Listing.propTypes = {
     items: PropTypes.arrayOf(

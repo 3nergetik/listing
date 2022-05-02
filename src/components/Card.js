@@ -3,7 +3,7 @@ import Code from "./Code";
 import Level from "./Level";
 import "../App.css";
 
-function Card({item}) {
+export default function Card({item}) {
     if (item.state === "active") {
         return (
         <div className="item-list">
@@ -24,6 +24,3 @@ function Card({item}) {
     }
     return (<></>);
 }
-
-export default Card;
-
